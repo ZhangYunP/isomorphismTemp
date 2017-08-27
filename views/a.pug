@@ -1,0 +1,15 @@
+doctype html
+html(lang='zh-CN')
+  head
+    title
+    link(href='/v' + version + '/dist/css/app.css', rel='stylesheet')
+  body
+    #root
+      | !{htmlstring}
+    if env == 'dev'
+      script(src='reload/reload.js')
+    else
+      script(src='/v' + version + '/dist/scripts/vendor.js')
+    script.
+      window.__initState__ = !{initState}
+    script(src='/v' + version + '/dist/scripts/index.bundle.js')

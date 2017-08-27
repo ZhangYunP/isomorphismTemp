@@ -1,0 +1,31 @@
+.taggleRoute-enter {
+	opacity: 0.01;
+	transition: opacity 300ms ease-in;
+}
+
+.taggleRoute-enter.taggleRoute-enter-active {
+	opacity: 1;
+}
+
+.taggleRoute-leave {
+	opacity: 1;
+	transition: opacity 300ms ease-in;
+}
+
+.taggleRoute-leave.taggleRoute-leave-active {
+	opacity: 0;
+}
+
+.w {
+	width: 266px;
+	height: 78px;
+	background: url(../images/sprite/sprite.png) 0 0 no-repeat;
+	background-position: -0px -0px;
+}
+
+.j {
+	width: 270px;
+	height: 60px;
+	background: url(../images/sprite/sprite.png) 0 0 no-repeat;
+	background-position: -32px -0px;
+}
